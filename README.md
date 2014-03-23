@@ -11,8 +11,8 @@ This approach allows HTML templates which are pure HTML.
 
 Example:
 
-
-  func main_page( w http.ResponseWriter, r * http.Request ){
+  
+    func main_page( w http.ResponseWriter, r * http.Request ){
 	template, err := node_template.NodeTemplateFromFile( "temp/main.html");
 
 	if( err != nil ){	
@@ -42,4 +42,4 @@ Example:
         }
 
 	template.Render( w );
-  }
+    }
