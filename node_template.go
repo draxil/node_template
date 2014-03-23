@@ -1,11 +1,11 @@
 /*
- node_template extends go.net/html & cascadia to make it as easy as possible to
- process pure HTML templates. Using jquery like search syntax you can find the
- elements you wish to populate by looking for the attributes you require.
- This approach allows HTML templates which are pure HTML.
+node_template extends go.net/html & cascadia to make it as easy as possible to
+process pure HTML templates. Using jquery like search syntax you can find the
+elements you wish to populate by looking for the attributes you require.
+This approach allows HTML templates which are pure HTML.
 
 
- Example:
+Example:
 
 
  func main_page( w http.ResponseWriter, r * http.Request ){
