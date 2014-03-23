@@ -30,16 +30,16 @@ Example:
             names.ReplaceContentText("tom");
         }
 
-	var people list.List
+        var people list.List
 	people.PushBack("Tom");
-	people.PushBack("Richard");
-	people.PushBack("Harry");
+        people.PushBack("Richard");
+        people.PushBack("Harry");
         person, _ := template.FindFirst(".person");
         if( person != nil ){
-		person.RepeatNode( &people, func( node * node_template.NodeTemplate, e * list.Element  ){
-			node.ReplaceContentText( e.Value.(string) );
-		});
+	    person.RepeatNode( &people, func( node * node_template.NodeTemplate, e * list.Element  ){
+                node.ReplaceContentText( e.Value.(string) );
+            });
         }
 
-	template.Render( w );
+        template.Render( w );
     }
