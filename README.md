@@ -13,12 +13,12 @@ Example:
 
   
     func main_page( w http.ResponseWriter, r * http.Request ){
-	template, err := node_template.NodeTemplateFromFile( "temp/main.html");
+        template, err := node_template.NodeTemplateFromFile( "temp/main.html");
 
-	if( err != nil ){	
-		log.Println( err );
-		return
-	} 
+        if( err != nil ){	
+            log.Println( err );
+            return
+        } 
  
        	title_el, err := template.FindFirst(`#title`);
         if( title_el != nil){
@@ -31,7 +31,7 @@ Example:
         }
 
         var people list.List
-	people.PushBack("Tom");
+        people.PushBack("Tom");
         people.PushBack("Richard");
         people.PushBack("Harry");
         person, _ := template.FindFirst(".person");
