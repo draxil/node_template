@@ -130,7 +130,7 @@ func (t *NodeTemplate) ReplaceContent(new_node *NodeTemplate) {
 	t.AppendChild(new_node.Node)
 }
 
-func (t *NodeTemplate) copy() *NodeTemplate {
+func (t *NodeTemplate) Copy() *NodeTemplate {
 	new_n := html.Node{}
 
 	new_n.Parent = nil
@@ -147,7 +147,7 @@ func (t *NodeTemplate) copy() *NodeTemplate {
 	subnode := t.FirstChild
 	for subnode != nil {
 		nt_subnode := NodeTemplate{subnode}
-		nt := nt_subnode.copy()
+		nt := nt_subnode.Copy()
 		new_n.AppendChild(nt.Node)
 		subnode = subnode.NextSibling
 	}
@@ -165,7 +165,7 @@ func (t *NodeTemplate) RepeatNode(l *list.List, f func(*NodeTemplate, *list.Elem
 		return
 	}
 	for e := l.Front(); e != nil; e = e.Next() {
-		n := t.copy()
+		n := t.Copy()
 		t.Parent.InsertBefore(n.Node, t.Node)
 		f(n, e)
 	}
