@@ -43,3 +43,5 @@ Example:
 
         template.Render( w );
     }
+    
+[![GoDoc](https://godoc.org/github.com/draxil/node_template?status.png)](https://godoc.org/github.com/draxil/node_template)
