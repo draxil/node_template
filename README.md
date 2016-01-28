@@ -45,3 +45,4 @@ Example:
     }
     
 [![GoDoc](https://godoc.org/github.com/draxil/node_template?status.png)](https://godoc.org/github.com/draxil/node_template)
+[![Build Status](https://travis-ci.org/draxil/node_template.svg?branch=master)](https://travis-ci.org/draxil/node_template)
