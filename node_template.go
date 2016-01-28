@@ -2,8 +2,8 @@ package node_template
 
 import (
 	"bytes"
-	"code.google.com/p/cascadia"
-	"code.google.com/p/go.net/html"
+	"github.com/andybalholm/cascadia"
+	"golang.org/x/net/html"
 	"container/list"
 	"io"
 	"io/ioutil"
